@@ -15,7 +15,28 @@
 
 }
 
+/* margin */
+h1,
+h2,
+h3,
+p,
+ul{
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+/* container */
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid tomato;
+}
+
 /* header */
+.header{
+    padding: 24px 215px;
+}
 
 /* logo */
 .logo {
@@ -78,23 +99,34 @@
 /* hero */
 .hero {
     background-color: #2F303A;
+
+    text-align: center;
 }
 
 .hero-title {
     color:var(--primary-background-colour);
+
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin-bottom: 30px;
 }
 
 /* button */
 .button {
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
     color:var(--primary-background-colour);
     background-color: var(--accent-colour);
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -102,6 +134,12 @@
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    color:var(--primary-text-colour);
+    background-color:var(--primary-background-colour);
 }
 
 /* title */
@@ -113,12 +151,16 @@
 }
 
 /* advantages */
+.advantages{
+    padding: 94px 215px 0px;
+}
 
 .advantages-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .advantages-list .text{
@@ -128,9 +170,15 @@
     line-height: 1.71;
 }
 
+/* what we do */
+.work{
+    padding: 94px 215px 0px;
+}
+
 /* team */
 .team{
     background-color:var(--secondary-background-colour) ;
+    padding: 94px 215px;
 }
 
 .team-names{
@@ -149,6 +197,7 @@
 /* footer */
 .footer{
     background-color:#2F303A;
+    padding: 60px 215px;
 }
 
 .studio{
@@ -198,6 +247,12 @@
 }
 
 .portfolio-buttons{
+    display: inline-block;
+    min-width: auto;
+    padding: 6px 22px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
     color: var(--primary-text-colour);
     background-color: var(--secondary-background-colour);
     font-family: inherit;
@@ -214,3 +269,4 @@
     color: var(--primary-background-colour);
     background-color: var(--accent-colour);
 }
+
