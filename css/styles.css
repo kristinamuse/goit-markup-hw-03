@@ -172,7 +172,12 @@ ul{
 
 /* what we do */
 .work{
-    padding: 94px 215px 0px;
+    padding: 94px 215px;
+}
+
+.work .title,
+.team .title{
+    margin-bottom: 50px;
 }
 
 /* team */
@@ -180,6 +185,7 @@ ul{
     background-color:var(--secondary-background-colour) ;
     padding: 94px 215px;
 }
+
 
 .team-names{
     font-weight: 500;
@@ -200,6 +206,11 @@ ul{
     padding: 60px 215px;
 }
 
+.footer .logo{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
 .studio{
     color:var(--primary-background-colour);
 }
@@ -210,6 +221,7 @@ ul{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    margin-bottom: 10px;
 }
 
 .address-link{
@@ -226,7 +238,16 @@ ul{
     color: var(--accent-colour);
 }
 
+.address-email{
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
 /* portfolio */
+.portfolio{
+    padding: 94px 215px;
+}
+
 .projects-link{
     text-decoration: none;
 }
@@ -262,6 +283,11 @@ ul{
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+}
+
+.button-list{
+    display: inline-block;
+    margin-bottom: 50px;
 }
 
 .portfolio-buttons:hover,
