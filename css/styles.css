@@ -38,6 +38,11 @@ ul{
     padding: 24px 215px;
 }
 
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
 /* logo */
 .logo {
     color: #000000;
@@ -61,7 +66,33 @@ ul{
     list-style: none;
 }
 
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+}
+
+/* .site-nav .item{
+    margin-right: 50px;
+}
+
+.site-nav .item:last-child{
+    margin-right: 0;
+} */
+
+/* .site-nav .item:not(:last-child){
+    margin-right: 50px;
+} */
+
+.site-nav .item + .item,
+.header-contacts .item + .item{
+    margin-left: 50px;
+}
+
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-colour);
     font-weight: 500;
     font-size: 14px;
@@ -78,7 +109,14 @@ ul{
     color: var(--accent-colour);
 }
 
+.header-contacts{
+    display: flex;
+    margin-left: auto;
+}
+
 .contact-link{
+    display: block;
+
     color: var(--secondary-text-colour);
     font-weight: 500;
     font-size: 14px;
@@ -86,6 +124,7 @@ ul{
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
 
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -99,13 +138,11 @@ ul{
 /* hero */
 .hero {
     background-color: #2F303A;
-
     text-align: center;
 }
 
 .hero-title {
     color:var(--primary-background-colour);
-
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -126,7 +163,6 @@ ul{
 
     color:var(--primary-background-colour);
     background-color: var(--accent-colour);
-
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -138,8 +174,8 @@ ul{
 
 .button:hover,
 .button:focus {
-    color:var(--primary-text-colour);
-    background-color:var(--primary-background-colour);
+    color:var(--primary-background-colour);
+    background-color: var(--accent-colour);
 }
 
 /* title */
@@ -160,6 +196,7 @@ ul{
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
     margin-bottom: 10px;
 }
 
@@ -295,4 +332,3 @@ ul{
     color: var(--primary-background-colour);
     background-color: var(--accent-colour);
 }
-
