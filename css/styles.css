@@ -58,7 +58,7 @@ img{
 
 /* header */
 .header{
-    padding: 0px 215px;
+    /* padding: 0px 215px; */
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -212,7 +212,7 @@ img{
 
 /* advantages */
 .advantages{
-    padding: 94px 215px 0px;
+    padding: 94px 0px 0px;
 }
 
 .advantages-list{
@@ -242,7 +242,7 @@ img{
 
 /* what we do */
 .work{
-    padding: 94px 215px;
+    padding: 94px 0px;
 }
 
 .images-list{
@@ -259,7 +259,7 @@ img{
 /* team */
 .team{
     background-color:var(--secondary-background-colour) ;
-    padding: 94px 215px;
+    padding: 94px 0px;
 }
 
 .team-card{
@@ -294,7 +294,7 @@ img{
 /* footer */
 .footer{
     background-color:#2F303A;
-    padding: 60px 215px;
+    padding: 60px 0px;
 }
 
 .footer .logo{
