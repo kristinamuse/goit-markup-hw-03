@@ -56,6 +56,11 @@ img{
     /* outline: 2px solid tomato; */
 }
 
+/* section */
+.section{
+    padding: 100px 0px;
+}
+
 /* header */
 .header{
     /* padding: 0px 215px; */
@@ -163,6 +168,7 @@ img{
 .hero {
     background-color: #2F303A;
     text-align: center;
+    padding: 200px 0px;
 }
 
 .hero-title {
@@ -199,7 +205,7 @@ img{
 .button:hover,
 .button:focus {
     color:var(--primary-background-colour);
-    background-color: var(--accent-colour);
+    background-color: #188CE8;
 }
 
 /* title */
@@ -208,6 +214,7 @@ img{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 /* advantages */
@@ -220,9 +227,18 @@ img{
     padding: 0;
 }
 
-.advantages-list .item + .item{
-    margin-left: 30px;
+.advantages-list .item{
+    flex-basis: calc((100% - 90px) / 4);
+    margin-right: 30px;
 }
+
+.advantages-list .item:nth-child(4n){
+    margin-right: 0;
+}
+
+/* .advantages-list .item + .item{
+    margin-left: 30px;
+} */
 
 .advantages-title{
     font-weight: 700;
@@ -241,25 +257,25 @@ img{
 }
 
 /* what we do */
-.work{
-    padding: 94px 0px;
-}
 
 .images-list{
     display: flex;
     padding: 0;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
-.work .title,
-.team .title{
-    margin-bottom: 50px;
+.images-list .item {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+}
+
+.images-list .item:nth-child(3n) {
+    margin-right: 0;
 }
 
 /* team */
 .team{
     background-color:var(--secondary-background-colour) ;
-    padding: 94px 0px;
 }
 
 .team-card{
@@ -269,8 +285,21 @@ img{
 
 .team-list{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 0;
+}
+
+.team-card{
+    flex-basis: calc((100% - 90px) / 4);
+    margin-right: 30px;
+}
+
+.team-card:nth-child(4n) {
+    margin-right: 0;
+}
+
+.member{
+    padding: 30px 0px;
 }
 
 .team-names{
@@ -278,7 +307,7 @@ img{
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
-    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-list .text{
@@ -287,8 +316,6 @@ img{
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
 }
 
 /* footer */
@@ -315,6 +342,10 @@ img{
     margin-bottom: 9px;
 }
 
+.address-list{
+    padding: 0;
+}
+
 .address-link{
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
@@ -335,9 +366,6 @@ img{
 }
 
 /* portfolio */
-.portfolio{
-    padding: 94px 0px;
-}
 
 .projects-link{
     text-decoration: none;
@@ -367,6 +395,7 @@ img{
 .card-content{
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    border-top: 0;
 }
 
 .projects{
@@ -412,6 +441,7 @@ img{
 .portfolio-buttons:focus{
     color: var(--primary-background-colour);
     background-color: var(--accent-colour);
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .button-list{
