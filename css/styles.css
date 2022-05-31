@@ -345,10 +345,11 @@ img{
     padding: 0;
 }
 
-.address-link{
-    display: inline-block;
+.address-list .item{
     margin-top: 9px;
+}
 
+.address-link{
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     font-weight: 400;
